@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<!-- src/app/contact-form/contact-form.component.html -->
+<h2>Contact Form</h2>
+<form (submit)="saveContact()">
+  Name: <input type="text" [(ngModel)]="contact.name" name="name" required><br>
+  Email: <input type="text" [(ngModel)]="contact.email" name="email" required><br>
+  Message: <textarea [(ngModel)]="contact.message" name="message" required></textarea><br>
+  <input type="submit" value="Save">
+</form>
+<a routerLink="/contacts">Back to Contacts</a>
+
+<router-outlet></router-outlet>

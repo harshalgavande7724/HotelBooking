@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<!-- booking-form.component.html -->
+<h2>Booking Form</h2>
+<form (submit)="saveBooking()">
+  Guest Name: <input type="text" [(ngModel)]="booking.guestName" name="guestName" required><br>
+  Room Type: <input type="text" [(ngModel)]="booking.roomType" name="roomType" required><br>
+  Number of Nights: <input type="number" [(ngModel)]="booking.numNights" name="numNights" required><br>
+  <button type="submit">Save</button>
+</form>
+<a routerLink="/bookings">Back to Bookings</a>

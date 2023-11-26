@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Booking System</title>
+</head>
+<body>
+    <h2>Booking Form</h2>
+    <form action="/bookings/save" method="post" th:object="${booking}">
+        <input type="hidden" th:field="*{id}">
+        Guest Name: <input type="text" th:field="*{guestName}"><br>
+        Room Type: <input type="text" th:field="*{roomType}"><br>
+        Number of Nights: <input type="number" th:field="*{numNights}"><br>
+        <input type="submit" value="Save">
+    </form>
+    <a href="/bookings">Back to Bookings</a>
+</body>
+</html>

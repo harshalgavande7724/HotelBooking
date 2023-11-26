@@ -1,0 +1,64 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.destination-section {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+.destination-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.destination-card {
+  width: calc(33.33% - 20px);
+  height: 200px; /* Adjust height as needed */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.destination-name {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Background Images for Individual Cards */
+.card-1 {
+  background-image: url('./harsh.jpg'); 
+}
+
+.card-2 {
+  background-image: url('./new.jpg');
+}
+
+.card-3 {
+  background-image: url('./new1.jpg'); 
+}
+
+/* Add more styles for additional cards */

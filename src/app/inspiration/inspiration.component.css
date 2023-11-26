@@ -1,0 +1,91 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 20px;
+}
+
+.inspiration-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.inspiration-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* .card img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin: 5px;
+}
+
+.card-content {
+  padding: 15px;
+  background-color: #fff;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+} */
+
+/* Background images for each card */
+.card:nth-child(1) {
+  background-image: url('./img1.jpg');
+  width: 30%;
+  height: 30%;
+
+}
+
+.card:nth-child(2) {
+  background-image: url('./img2.jpg');
+  width: 30%;
+  height: 30%;
+}
+
+.card:nth-child(3) {
+  background-image: url('./img3.jpg');
+  width: 30%;
+height: 200px;
+}
+
+/* Add more background images for additional cards */
