@@ -1,0 +1,19 @@
+<!-- src/main/resources/templates/contact/form.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form action="/contacts/save" method="post" th:object="${contact}">
+        <input type="hidden" th:field="*{id}">
+        Name: <input type="text" th:field="*{name}"><br>
+        Email: <input type="text" th:field="*{email}"><br>
+        Message: <textarea th:field="*{message}"></textarea><br>
+        <input type="submit" value="Save">
+    </form>
+    <a href="/contacts">Back to Contacts</a>
+</body>
+</html>

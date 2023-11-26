@@ -1,0 +1,16 @@
+<!-- src/main/resources/templates/booking/detail.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Booking System</title>
+</head>
+<body>
+    <h2>Booking Details</h2>
+    <p>ID: <span th:text="${booking.id}"></span></p>
+    <p>Guest Name: <span th:text="${booking.guestName}"></span></p>
+    <p>Room Type: <span th:text="${booking.roomType}"></span></p>
+    <p>Number of Nights: <span th:text="${booking.numNights}"></span></p>
+    <a href="/bookings">Back to Bookings</a>
+</body>
+</html>

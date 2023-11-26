@@ -1,0 +1,20 @@
+<!-- src/main/resources/templates/signup.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    
+    <!-- Display success message if present -->
+    <p th:if="${signupSuccessMessage}" th:text="${signupSuccessMessage}" style="color: green;"></p>
+
+    <form action="/signup" method="post" th:object="${user}">
+        <input type="text" th:field="*{username}" placeholder="Username"><br>
+        <input type="password" th:field="*{password}" placeholder="Password"><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
